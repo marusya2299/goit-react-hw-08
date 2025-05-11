@@ -1,28 +1,35 @@
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
-
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-img {
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+

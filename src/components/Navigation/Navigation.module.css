@@ -1,0 +1,15 @@
+.elementNavigation{
+}
+
+.elementNavigation:hover,
+.elementNavigation:focus{
+    text-decoration: overline;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
