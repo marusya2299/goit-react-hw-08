@@ -30,9 +30,6 @@ export default function App() {
     <strong>Refreshing user...</strong>
   ) : (
     <>
-      {isLoading && <Loader />}
-      {error && <Error message={error} />}
-
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -67,6 +64,8 @@ export default function App() {
           </Route>
         </Routes>
       </Suspense>
+      {isLoading && <Loader />}
+      {error && <Error message={error} />}
     </>
     
   );

@@ -1,8 +1,10 @@
+import css from '../HomePage/HomePage';
+
 export default function HomePage() {
     return (
-      <>
-        <h1>Home</h1>
-      </>
+      <div className={css.home}>
+        <h1 className={css.header}>Welcome to home page!</h1>
+      </div>
     );
   }
   
